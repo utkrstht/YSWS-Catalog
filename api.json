@@ -26,6 +26,14 @@
       "status": "active"
     },
     {
+      "name": "Polygon",
+      "description": "Build a 3d website using three.js and get a grant to go watch your favourite movies!",
+      "website": "https://polygon.hackclub.com/",
+      "slack": "https://hackclub.enterprise.slack.com/archives/C08H7R7T40N",
+      "slackChannel": "#polygon",
+      "status": "active"
+    },
+    {
       "name": "Beest",
       "description": "Build a real project, qualify to fly to the Netherlands, and build a mechanical animal at a week-long hackathon.",
       "website": "https://beest.hackclub.com/?utm_source=ysws-catalog",
