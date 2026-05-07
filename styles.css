@@ -4549,3 +4549,13 @@ font-family: "Saira Stencil", sans-serif;
     bottom: 8px;
   }
 }
+/*Forge (https://forge.hackclub.com/)*/
+.program-card.yourprogram-card {
+  background:
+    linear-gradient(165deg, rgba(R, G, B, 0.58) 0%, rgba(R, G, B, 0.44) 100%),
+    url("logos/forge_bg.png.png") center/cover no-repeat;
+  background-blend-mode: multiply;
+  border: 2px solid #ff711f !important;
+  color: #ff711f !important;
+  overflow: hidden;
+}
