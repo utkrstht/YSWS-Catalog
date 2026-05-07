@@ -20,7 +20,7 @@ limitedTime:
     slackChannel: "#pullquests"
     status: active
   - name: Polygon
-    deadline: 2026-07-31
+    deadline: "2026-07-31T23:59:59Z"
     description: Build a 3d website using three.js and get a grant to go watch your favourite movies!
     website: https://polygon.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C08H7R7T40N
