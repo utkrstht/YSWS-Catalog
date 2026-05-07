@@ -4549,3 +4549,111 @@ font-family: "Saira Stencil", sans-serif;
     bottom: 8px;
   }
 }
+/*Forge (https://forge.hackclub.com/)*/
+.program-card.forge-card {
+background:
+  linear-gradient(
+    165deg,
+    rgba(255, 113, 31, 0.58) 0%,
+    rgba(255, 113, 31, 0.44) 100%
+  ),
+  url("logos/forge_bg.png") center/cover no-repeat;
+
+background-blend-mode: multiply;
+border: 2px solid #ff711f !important;
+color: #ff711f !important;
+overflow: hidden;
+}
+.program-card.forge-card .program-header,
+.program-card.forge-card p,
+.program-card.forge-card .program-deadline,
+.program-card.forge-card .program-footer,
+.program-card.forge-card .program-participants {
+  position: relative;
+  z-index: 1;
+}
+
+.program-card.forge-card .program-header h3 {
+  color: #f3f8ff !important;
+  letter-spacing: 0.02em;
+  font-size: 1.4rem;
+}
+
+.program-card.forge-card .program-header h3::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  background-image: url(logos/precision_manufacturing_47dp_FF4500.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -2px;
+}
+
+.program-card.forge-card .program-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.program-card.forge-card .program-completion-toggle {
+  position: static;
+  margin-left: 0;
+  order: 1;
+}
+
+.program-card.forge-card .program-links {
+  order: 2;
+}
+
+.program-card.forge-card .program-links a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.program-card.forge-card .program-links a:hover {
+  color: #ffffff !important;
+}
+
+.program-card.forge-card .status-active {
+  background: #ff711f !important;
+  color: white !important;
+  animation: forge-status-glow 2s ease-in-out infinite !important;
+}
+@keyframes forge-status-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px orangered;
+  }
+  50% {
+    box-shadow: 0 0 15px orangered;
+  }
+}
+
+.program-card.forge-card .forge-sticker {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 64px;
+  height: auto;
+  border-radius: 8px;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.program-card.forge-card:hover {
+  border-color: #ff711f !important;
+}
+@media (max-width: 640px) {
+  .program-card.forge-card .forge-sticker {
+    width: 50px;
+    right: 8px;
+    bottom: 8px;
+  }
+}
