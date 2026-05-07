@@ -299,6 +299,7 @@ function createProgramCard(program) {
     const deadlineClass = getDeadlineClass(program.deadline);
 
     const opensClass = program.opens && new Date() < new Date(program.opens) ? 'opens-soon' : '';
+    const forgeClass = program.name === 'Forge' ? 'forge-card' : '';
     const macondoClass = program.name === 'Macondo' ? 'macondo-card' : '';
     const slushiesClass = program.name === 'Slushies' ? 'slushies-card' : '';
     const blueprintClass = program.name === 'Blueprint' ? 'blueprint-card' : '';
@@ -366,7 +367,7 @@ function createProgramCard(program) {
         <img src="logos/JusSTUDY.png" alt="Jus'STUDY" class="jusstudy-center">
         <img src="logos/jusstudy-emi.avif" alt="" class="jusstudy-emi">
     ` : '';
-
+    
     const macondoAssets = program.name === 'Macondo' ? `
         <img src="logos/macondo-background.png" alt="" class="macondo-background" aria-hidden="true">
         <img src="logos/Macondo.png" alt="Macondo" class="macondo-center">
@@ -405,7 +406,8 @@ function createProgramCard(program) {
 
     const raspapiPi = program.name == 'RaspAPI' ? `<img src="https://raspapi.hackclub.com/rpizero-topdown.png" alt="" class="raspapi-pi" aria-hidden="true">` : '';
     const beestSticker = program.name == 'Beest' ? `<img src="logos/beest-sticker.webp" alt="Beest sticker" class="beest-sticker" loading="lazy">` : '';
-
+    const forgeSticker = program.name == 'Forge' ? `<img src="logos/sticker_forge.svg" alt="Forge sticker" class="forge-sticker" loading="lazy">` : '';
+    
     const alchemize = program.name === 'Alchemize' ? `<img src="https://alchemize-ysws.vercel.app/Alchemist.webp" alt="Alchemize Logo" class="alchemize-logo">` : '';
     const alchemizeBg = program.name === 'Alchemize' ? `<img src="./logos/alchemize.png" alt="Alchemize Background" class="alchemize-bg">` : '';
 
@@ -413,7 +415,7 @@ function createProgramCard(program) {
     const hackanomousMascot = program.name == 'Hackanomous' ? `<img src="https://cdn.hackclub.com/019d9ef5-f609-7d16-971f-3865d2092604/backanomous_mascot_320p.png" alt="Hackanomous Mascot" class="hackanomous-mascot">` : '';
 
     return `
-        <div class="card program-card ${opensClass} ${macondoClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
+        <div class="card program-card ${opensClass} ${forgeClass} ${macondoClass} ${slushiesClass} ${blueprintClass} ${accelerateClass} ${baubleClass} ${meowClass} ${woofClass} ${pxlClass} ${wackyFilesClass} ${flavortownClass} ${jusstudyClass} ${rebootClass} ${kitlabClass} ${sleepoverClass} ${stasisClass} ${coeurClass} ${remixedClass} ${hctgClass} ${hackahomeClass} ${rootshipClass} ${raspapiClass} ${beestClass} ${alchemizeClass} ${hackanomousClass}" data-program="${encodedProgram}" data-name="${program.name}">
             ${macondoAssets}
             ${kitlabLogo}
             ${kitlabGif}
@@ -452,6 +454,7 @@ function createProgramCard(program) {
             ${jusstudyAssets}
             ${rebootLogo}
             ${raspapiPi}
+            ${forgeSticker}
             ${beestSticker}
             ${hackanomousMascot}
         </div>
