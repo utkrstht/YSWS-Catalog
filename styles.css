@@ -4626,6 +4626,11 @@ overflow: hidden;
   color: white !important;
   animation: forge-status-glow 2s ease-in-out infinite !important;
 }
+.program-card.forge-card p,
+.program-card.forge-card .program-participants {
+  color: #e6eef9 !important;
+}
+
 @keyframes forge-status-glow {
   0%,
   100% {
