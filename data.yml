@@ -14,7 +14,7 @@ limitedTime:
     slackChannel: "#macondo"
     status: active
   - name: Horizons
-    description: 7 hackathons. Ran by teenagers across the globe. For teenagers everywhere.
+    description: 7 hackathons. Run by teenagers across the globe. For teenagers everywhere.
     website: https://horizons.hackclub.com/
     slack: https://hackclub.enterprise.slack.com/archives/C0AGKQ6K476
     slackChannel: "#horizons"
